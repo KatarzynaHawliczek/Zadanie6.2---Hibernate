@@ -1,0 +1,93 @@
+API Restowe dla serwisu filmowego.
+
+Dodaj film:
+POST /rest/films
+{
+	"title" : "Nic œmiesznego"
+}
+{
+	"title" : "Kiler"
+}
+{
+	"title" : "Wszyscy jesteœmy Chrystusami"
+}
+{
+    "title" : "Miœ"
+}
+{
+	"title" : "Dzieñ Œwira"
+}
+
+Dodaj aktora:
+POST /rest/actors
+{
+    "name" : "Marek",
+    "surname" : "Kondrat"
+}
+{
+    "name" : "Micha³",
+    "surname" : "Koterski"
+}
+
+Wyœwietl wszystkie filmy:
+GET /rest/films
+
+Wyœwietl wszystkich aktorów:
+GET /rest/actors
+
+Wyœwietl konkretny film:
+GET /rest/films/{filmId}
+
+Wyœwietl konkretnego aktora:
+GET /rest/actors/{actorId}
+
+Powi¹¿ aktora z filmem:
+PUT /rest/actors/{actorId}/films/{filmId}
+{
+	"title" : "Dzieñ Œwira"
+}
+
+Aktualizuj informacje o filmie:
+PUT /rest/films/{filmId}
+{
+    "title" : "Tato"
+}
+
+Usuñ konkretnny film:
+DELETE /rest/films/{filmId}
+
+Dodaj ocenê do konkretnego filmu:
+POST /rest/films/{filmId}/rate
+{
+    "rate" : 6
+}
+{
+    "rate" : 10
+}
+
+Wyœwietl ocenê konkretnego filmu:
+GET /rest/films/{filmId}/rate
+
+Dodaj komentarz do konkretnego filmu:
+POST /rest/films/{filmId}/comments
+{
+	"content" : "Dobry film."
+}
+{
+	"content" : "Bardzo ciekawy."
+}
+{
+	"content" : "Lubie to."
+}
+
+Wyœwietl komentarze konkretnego filmu:
+GET /rest/films/{filmId}/comments
+
+Usuñ komentarz do konkretnego filmu:
+DELETE /rest/films/{filmId}/comments/{commentId}
+
+Wyœwietl aktorów konkretnego filmu:
+GET /rest/films/{filmId}/actors
+
+Wyœwietl filmy konkretnego aktora:
+GET /rest/actors/{actorId}/films

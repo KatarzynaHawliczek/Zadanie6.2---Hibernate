@@ -1,0 +1,481 @@
+{
+	"variables": [],
+	"info": {
+		"name": "API Restowe dla serwisu filmowego",
+		"_postman_id": "73f7cacf-194e-71a7-9e3e-7c0f2d5ea78a",
+		"description": "Aplikacja dostarczająca informacje o filmach.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "/rest/films",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"Nic śmiesznego\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"Kiler\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"Wszyscy jesteśmy Chrystusami\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"Miś\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"Dzień Świra\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/actors",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/actors",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Marek\",\n    \"surname\" : \"Kondrat\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/actors",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/actors",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\" : \"Michał\",\n    \"surname\" : \"Koterski\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/actors",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/actors",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films/{filmId}",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/actors/{actorId}",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/actors/2",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/actors/{actorId}/films/{filmId}",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/actors/1/films/5",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"Dzień Świra\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/actors/{actorId}/films/{filmId}",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/actors/2/films/3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"Wszyscy jesteśmy Chrystusami\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/actors/{actorId}/films/{filmId}",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/actors/2/films/5",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"Dzień Świra\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films/{filmId}",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films/4",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\" : \"Tato\"\n}\n"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films/{filmId}",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films/4",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films/{filmId}/rate",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films/2/rate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"rate\" : 6\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films/{filmId}/rate",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films/2/rate",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"rate\" : 10\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films/{filmId}/rate",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films/2/rate",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films/{filmId}/comments",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films/5/comments",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"content\" : \"Dobry film.\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films/{filmId}/comments",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films/5/comments",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"content\" : \"Bardzo ciekawy.\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films/{filmId}/comments",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films/5/comments",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"content\" : \"Lubie to.\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films/{filmId}/comments",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films/5/comments",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films/{filmId}/comments/{commentId}",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films/5/comments/3",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films/{filmId}/actors",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films/3/actors",
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/films/{filmId}/actors",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/films/5/actors",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/actors/{actorId}/films",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/actors/1/films",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "/rest/actors/{actorId}/films",
+			"request": {
+				"url": "http://localhost:8080/filmwebapp/rest/actors/2/films",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
